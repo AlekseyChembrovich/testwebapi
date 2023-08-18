@@ -18,7 +18,7 @@ public class BlobService : IBlobService
 {
     private readonly BlobContainerClient _containerClient;
 
-    private const string _containerName = "test-container";
+    private const string _containerName = "test-blob-stor";
 
     public BlobService(BlobServiceClient blobServiceClient)
     {

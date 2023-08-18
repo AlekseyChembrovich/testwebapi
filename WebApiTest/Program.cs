@@ -1,6 +1,5 @@
 using Azure.Storage.Blobs;
 using WebApiTest.Services;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,8 +14,6 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
-app.MapGet("/time/utc", () => Results.Ok(DateTime.UtcNow));
 
 app.MapControllers();
 
