@@ -12,7 +12,7 @@ public class TestController : ControllerBase
         var result = Enumerable.Range(1, 5) // Comment #1
             .Select(x => new
             {
-                Date = DateTime.Now.AddDays(x),
+                Date = DateTime.Now.AddDays(x), // Comment #2
                 Temperature = Random.Shared.Next(-20, 20)
             })
             .ToList();
