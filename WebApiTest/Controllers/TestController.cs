@@ -9,7 +9,7 @@ public class TestController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        var result = Enumerable.Range(1, 5)
+        var result = Enumerable.Range(1, 5) // Comment #1
             .Select(x => new
             {
                 Date = DateTime.Now.AddDays(x),
